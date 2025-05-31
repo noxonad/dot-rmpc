@@ -118,28 +118,40 @@
             border: None,
             pane: Split(
                 direction: Vertical,
-                panes: [(size: "50%", pane: Pane(Directories)), (size: "50%", pane: Pane(Queue))],
+                panes: [
+                    (size: "50%", borders: "ALL", pane: Pane(Directories)),
+                    (size: "50%", borders: "ALL", pane: Pane(Queue))
+                ],
             ),
         ),
         (
             name: "Albums",
             pane: Split(
                 direction: Vertical,
-                panes: [(size: "50%", pane: Pane(Albums)), (size: "50%", pane: Pane(Queue))],
+                panes: [
+                    (size: "50%", borders: "ALL", pane: Pane(Albums)),
+                    (size: "50%", borders: "ALL", pane: Pane(Queue))
+                ],
             ),
         ),
         (
             name: "Search",
             pane: Split(
                 direction: Vertical,
-                panes: [(size: "50%", pane: Pane(Search)), (size: "50%", pane: Pane(Queue))],
+                panes: [
+                    (size: "50%", borders: "ALL", pane: Pane(Search)),
+                    (size: "50%", borders: "ALL", pane: Pane(Queue))
+                ],
             ),
         ),
         (
             name: "Lyrics",
             pane: Split(
                 direction: Vertical,
-                panes: [(size: "50%", pane: Pane(Lyrics)), (size: "50%", pane: Pane(Queue))],
+                panes: [
+                    (size: "50%", borders: "ALL", pane: Pane(Lyrics)),
+                    (size: "50%", borders: "ALL", pane: Pane(Queue))
+                ],
             ),
         ),
     ],
